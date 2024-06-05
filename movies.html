@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title and Rating Form</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Title and Rating Form</h1>
+        <form id="ratingForm">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" min="1" max="10" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="displaySection"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="movies.js"></script>
+</body>
+</html>
